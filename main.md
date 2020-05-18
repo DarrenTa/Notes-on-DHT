@@ -1,19 +1,23 @@
-#Multi-Level DHT Design and Evaluation
 
-##Background
+# Multi-Level DHT Design and Evaluation
+
+This is a local copy of a document from [Protocol Labs](https://protocol.ai/).
+
+## Background
 
 Routing in content-oriented or content-centric networks means that any content published in this network needs to have a routable address. While traditionally the number of routable addresses (i.e., IP addresses) needed was bounded by the number of physical machines/end-nodes, switching to addressable content means that the number of routable addresses expands to match the number of unique content items (i.e. any file) that is published on the network. Content-addressable networks face the challenge of routing scalability, as the amount of addressable elements in the network rises by several orders of magnitude compared to the host-addressable Internet of today.
 
 In the case of IPFS and libp2p, content routing is done primarily by means of a Distributed Hash Table (DHT). Although DHTs are known to scale in the number of nodes, the decentralised and totally unmanaged structure of the IPFS and libp2p systems presents challenges when it comes to dialability of nodes and look-up latency in the underlying network.
 
-##Problem Statement
+## Problem Statement
 
-The solutions proposed for this RFP will be addressing our published open problem on Routing at Scale. Please review the problem in detail for requirements and constraints.
-Scope of this RFP
+The solutions proposed for this RFP will be addressing our published open problem on [Routing at Scale](./Routing-at-Scale.md).
+
+**Scope of this RFP**
 
 In this RFP, we are looking for approaches that target Distributed Hash Table-based architectures and propose enhanced designs that use multiple DHT layers or dimensions. Each layer of the DHT is either topologically embedded into the underlying network topology (e.g., through geolocation or hop count), is based on a specific sharding strategy, or is based on some specific topic to exploit the power of social interactions. Topological embedding is important here in order to take advantage of locality of interest and reduced number of network hops to resolve content. Approaches should be resilient to high churn, provide low look-up time, and scale to tens of millions of users.
 
-##Objectives & Key Results
+## Objectives & Key Results
 
 * Objective 1: Design of multi-level DHT
   1. Review related literature, create a short survey and identify solutions from which it is worth borrowing concepts.
