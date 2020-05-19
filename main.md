@@ -34,5 +34,7 @@ In this RFP, we are looking for approaches that target Distributed Hash Table-ba
         1. Significant network size variation, with weekly cycles between 150K and 250K nodes.
         2. Large fraction (75%+) of nodes that undiable due to NAT/Firewalls.
         3. A 100GB file transforms into a graph of roughly 1 million blocks when added to IPFS. For random-access to be possible, that means that roughly 2 million provides (DHT puts) need to happen every time interval (default: 24 hours).
+>Darren:  I fell that this should be a major area of focus. If random access of large files can be made efficient then won't that port to many files?  
+
 * Objective 3: Validation in a testbed environment
     1. Develop a prototype Go implementation that integrates into the go-libp2p Implementation.
