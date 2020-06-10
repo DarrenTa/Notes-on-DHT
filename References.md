@@ -8,7 +8,7 @@ Related Links
 
 1. [Merkle DAG Discussion](https://github.com/jbenet/random-ideas/issues/20)
 2. [NDN Seminar](https://research.protocol.ai/blog/2020/ndn-seminar-a-high-level-overview-of-the-interplanetary-file-system/)
-
+3. [Naming in Content-Oriented Architectures](https://dl.acm.org/doi/pdf/10.1145/2018584.2018586)
 
 Related Videos
 
